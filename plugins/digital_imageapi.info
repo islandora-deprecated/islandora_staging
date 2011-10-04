@@ -1,0 +1,7 @@
+name = Islandora ImageAPI
+description = Adds image manipulation support through a REST interface
+package = Islandora Dependencies
+dependencies[] = digital_repository
+dependencies[] = imageapi
+version = 11.3.0
+core = 7.x
