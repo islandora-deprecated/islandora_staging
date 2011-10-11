@@ -275,7 +275,7 @@ function pidfield_field_formatter_info() {
 function theme_pidfield_formatter_default($element) {
   $pid = $element['#item']['safe'];
   if (!empty($pid)) {
-    return islandora_repository_get_items($pid);
+    return fedora_repository_get_items($pid);
   }
   return null;
 }

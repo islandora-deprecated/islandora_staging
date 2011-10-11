@@ -35,7 +35,7 @@
                         <audit:componentID/>
                         <audit:responsibility>fedoraAdmin</audit:responsibility>
                         <audit:date>2010-06-10T17:43:56.335Z</audit:date>
-                        <audit:justification>Ingested from local file /Users/aoneill/islandora_repository/content_models/ilives_bookCModel.xml</audit:justification>
+                        <audit:justification>Ingested from local file /Users/aoneill/fedora_repository/content_models/ilives_bookCModel.xml</audit:justification>
                     </audit:record>
                     <audit:record ID="AUDREC4">
                         <audit:process type="Fedora API-M"/>
@@ -67,7 +67,7 @@
                         <audit:componentID/>
                         <audit:responsibility>fedoraAdmin</audit:responsibility>
                         <audit:date>2010-06-15T07:01:30.019Z</audit:date>
-                        <audit:justification>Ingested from local file /Users/al/islandora_repository/content_models/ilives_bookCModel.xml</audit:justification>
+                        <audit:justification>Ingested from local file /Users/al/fedora_repository/content_models/ilives_bookCModel.xml</audit:justification>
                     </audit:record>
                     <audit:record ID="AUDREC8">
                         <audit:process type="Fedora API-M"/>
@@ -123,7 +123,7 @@
                         <audit:componentID/>
                         <audit:responsibility>fedoraAdmin</audit:responsibility>
                         <audit:date>2010-08-30T13:14:03.487Z</audit:date>
-                        <audit:justification>Ingested from local file /Users/aoneill/islandora_repository/ilives/xml/ilives_bookCModel.xml</audit:justification>
+                        <audit:justification>Ingested from local file /Users/aoneill/fedora_repository/ilives/xml/ilives_bookCModel.xml</audit:justification>
                     </audit:record>
                     <audit:record ID="AUDREC15">
                         <audit:process type="Fedora API-M"/>

@@ -19,8 +19,8 @@ function fedora_attach_perm() {
  * On View option hilights files that are in the repository.
  */
 function fedora_attach_nodeapi(&$node, $op, $teaser) {
-  module_load_include('inc', 'islandora_repository', 'api/fedora_item');
-  module_load_include('inc', 'islandora_repository', 'api/fedora_utils.inc');
+  module_load_include('inc', 'fedora_repository', 'api/fedora_item');
+  module_load_include('inc', 'fedora_repository', 'api/fedora_utils.inc');
   switch ($op) {
     case 'insert':
     case 'update':
@@ -70,7 +70,7 @@ function fedora_attach_nodeapi(&$node, $op, $teaser) {
                   }
                   $new_item->add_datastream_from_file($file->filepath, 'OBJ', $file->filename, $file->filemime, 'M');
                   $new_item->add_relationship("hasModel", "islandora:genericCModel", FEDORA_MODEL_URI);
-                  module_load_include('inc', 'islandora_repository', 'api/dublin_core');
+                  module_load_include('inc', 'fedora_repository', 'api/dublin_core');
                   $dc = new Dublin_Core();
                   $dc->add_element('dc:title', $file->description);
                   $dc->add_element('dc:identifier', $new_item->pid);
@@ -129,7 +129,7 @@ function fedora_attach_nodeapi(&$node, $op, $teaser) {
  * Implementation of hook_menu().
  */
 function fedora_attach_menu() {
-  $items['admin/settings/islandora_repository/attach'] = array(
+  $items['admin/settings/fedora_repository/attach'] = array(
     'title' => 'Fedora Attach',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('fedora_attach_admin'),
@@ -381,7 +381,7 @@ function _fedora_attach_build_roles_form(&$form, $inside_js = FALSE) {
 }
 
 function _fedora_attach_create_policy($roles) {
-  $policy_filename = !empty($roles) ? drupal_get_path('module', 'islandora_repository') . '/policies/viewANDeditbyrole.xml' : drupal_get_path('module', 'islandora_repository') . '/policies/noObjectEditPolicy.xml';
+  $policy_filename = !empty($roles) ? drupal_get_path('module', 'fedora_repository') . '/policies/viewANDeditbyrole.xml' : drupal_get_path('module', 'fedora_repository') . '/policies/noObjectEditPolicy.xml';
   $policy_document = new DOMDocument();
   $policy_document->load($policy_filename);
   $designators = $policy_document->getElementsByTagName("SubjectAttributeDesignator");
