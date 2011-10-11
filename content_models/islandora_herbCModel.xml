@@ -35,7 +35,7 @@
                         <audit:componentID/>
                         <audit:responsibility>fedoraAdmin</audit:responsibility>
                         <audit:date>2010-05-10T15:42:10.930Z</audit:date>
-                        <audit:justification>Ingested from local file /Applications/MAMP/htdocs/f3/sites/default/modules/fedora_repository/content_models/islandora_herbCModel.xml</audit:justification>
+                        <audit:justification>Ingested from local file /Applications/MAMP/htdocs/f3/sites/default/modules/islandora_repository/content_models/islandora_herbCModel.xml</audit:justification>
                     </audit:record>
                     <audit:record ID="AUDREC4">
                         <audit:process type="Fedora API-M"/>
@@ -147,7 +147,7 @@
                         <audit:componentID/>
                         <audit:responsibility>fedoraAdmin</audit:responsibility>
                         <audit:date>2010-09-16T16:15:28.762Z</audit:date>
-                        <audit:justification>Ingested from local file /Applications/MAMP/htdocs/f3/sites/default/modules/fedora_repository/content_models/islandora_herbCModel.xml</audit:justification>
+                        <audit:justification>Ingested from local file /Applications/MAMP/htdocs/f3/sites/default/modules/islandora_repository/content_models/islandora_herbCModel.xml</audit:justification>
                     </audit:record>
                     <audit:record ID="AUDREC18">
                         <audit:process type="Fedora API-M"/>
